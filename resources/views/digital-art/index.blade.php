@@ -75,9 +75,6 @@
 
     </div>
 
-
-    {{-- PAGINATION --}}
-
     <div class="mt-5">
 
        {{ $arts->links('pagination::bootstrap-5') }}

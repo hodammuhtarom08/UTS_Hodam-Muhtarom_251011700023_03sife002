@@ -1,10 +1,13 @@
 <?php
 
 use App\Http\Controllers\DigitalArtController;
+use App\Models\DigitalArt;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+    $arts = DigitalArt::latest()->take(4)->get();
+
+    return view('home', compact('arts'));
 })->name('home');
 
 Route::get('/profile', function () {

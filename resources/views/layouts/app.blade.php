@@ -132,6 +132,46 @@
             font-weight:700;
         }
         .social-icon:hover { background:#0b5ed7; color:#fff; }
+
+        /* HERO SECTION - HOME */
+        .hero-section {
+            position: relative;
+            background-image:
+                linear-gradient(rgba(13, 73, 230, 0.65), rgba(10, 30, 90, 0.75)),
+                url('{{ asset('assets/images/welcome.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 70px 20px 90px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+        }
+        .hero-icon { font-size: 50px; margin-bottom: 10px; }
+        .hero-eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 14px;
+            opacity: .9;
+            margin-bottom: 5px;
+        }
+        .hero-title {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+        .hero-meta {
+            font-size: 14px;
+            opacity: .95;
+            line-height: 1.8;
+            text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+        }
+        .home-section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">

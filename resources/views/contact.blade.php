@@ -36,7 +36,7 @@
                             <div class="contact-info-box">
                                 <div class="contact-icon">&#9993;</div>
                                 <div class="contact-label">Email</div>
-                                <div>hodam@example.com</div>
+                                <div>hodammuhtarom@gmail.com</div>
                             </div>
                         </div>
 
