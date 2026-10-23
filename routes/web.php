@@ -5,7 +5,7 @@ use App\Models\DigitalArt;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $arts = DigitalArt::latest()->take(4)->get();
+    $arts = DigitalArt::orderByDesc('id')->take(4)->get();
 
     return view('home', compact('arts'));
 })->name('home');

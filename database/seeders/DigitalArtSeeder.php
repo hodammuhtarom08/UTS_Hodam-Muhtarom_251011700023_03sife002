@@ -9,7 +9,7 @@ class DigitalArtSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('digital_art')->insert([
+        $data = [
 
             [
                 'title' => 'Sunset Dream',
@@ -111,6 +111,13 @@ class DigitalArtSeeder extends Seeder
                 'description' => 'Visualisasi dunia masa depan dengan pulau-pulau melayang dan arsitektur futuristik, dipadukan dengan nuansa fantasi sci-fi.',
             ],
 
-        ]);
+        ];
+
+        $now = now();
+
+        DB::table('digital_art')->truncate();
+        DB::table('digital_art')->insert(
+            array_map(fn ($row) => $row + ['created_at' => $now, 'updated_at' => $now], $data)
+        );
     }
 }

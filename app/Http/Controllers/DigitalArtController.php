@@ -8,7 +8,7 @@ class DigitalArtController extends Controller
 {
     public function index()
     {
-        $arts = DigitalArt::paginate(4);
+        $arts = DigitalArt::orderBy('id')->paginate(4);
 
         return view('digital-art.index', compact('arts'));
     }
